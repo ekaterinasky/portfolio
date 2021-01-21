@@ -1,0 +1,78 @@
+.work {
+    padding-top: 120px;
+
+    &__wrapper {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 35px;
+        display: grid;
+        grid-template-columns: repeat(4, 270px);
+        grid-template-rows: repeat(2, 270px);
+        row-gap: 13px;
+        column-gap: 13px;
+    }
+
+    &__item {
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        padding-top: 30px;
+        padding-left: 30px;
+        padding-right: 29px;
+        padding-bottom: 25px;
+
+        &-title {
+            font-weight: 700;
+            margin-top: 20px;
+        }
+
+        &-text {
+            font-size: 12px;
+            line-height: 18px;
+        }
+
+        &-mt32 {
+            margin-top: 37px;
+        }
+    }
+
+    &__persent {
+        position: absolute;
+        display: grid;
+        grid-template-columns: repeat(3, 350px);
+        grid-template-rows: repeat(2, 70px);
+        row-gap: 30px;
+        column-gap: 45px;
+        margin-top: 120px;
+
+        &-title {
+            position: relative;
+            @include before_circle;
+            padding: 8px 0px 7px 13px;
+
+            &:before {
+                top: 0;
+            }
+        }
+
+        &-number {
+            position: relative;
+            margin-left: auto;
+            top: 10px;
+            right: -219px;
+        }
+
+        div {
+            position: absolute;
+            display: flex;
+        }
+
+        &-liner {
+            width: 350px;
+            height: 14px;
+            background-color: $main-color;
+            border-radius: 4px;
+            position: relative;
+            top: 56px;
+        }
+    }
+}

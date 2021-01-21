@@ -1,0 +1,38 @@
+.promo {
+    min-height: 100vh;
+    padding: 206px 0 236px 0;
+    position: relative;
+    background: url('../../img/IMG-20201226-WA0010 1.jpg') no-repeat 50%/cover;
+
+    &__title {
+        width: 535px;
+        margin-top: 10px;
+    }
+
+    &__subtitle {
+        position: relative;
+        @include before_circle;
+        padding-left: 10px;
+        z-index: 2;
+
+    }
+
+    &__btns {
+        margin-top: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 250px;
+
+    }
+
+    &__link {
+        color: #fff;
+        font-weight: bold;
+
+        &:hover {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+}
